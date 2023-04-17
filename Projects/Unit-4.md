@@ -3,7 +3,7 @@
 ###### Pinterest. [^1]
 
 ## Criteria A: Planning
-### Problem Definition:
+### Problem Definition
 Often times, students are ISAK are not satisfied with the limited dessert options provided by CK. The same chocolate chip cookies, sunflower cake and jelly get incredibly repetitive, leaving students with only one option: make their own desserts. Some students, including myself, in order to spread their creations, have shared their recipes in class group chats so others can learn from them. Unfortunately, these recipes are often forgotten and even worse, neglected. Bakers at ISAK are in immediate need of a social network which will allow them to share recipes and connect with each other and their cultures. 
 
 ### Proposed Solution
@@ -13,7 +13,7 @@ Often times, students are ISAK are not satisfied with the limited dessert option
 ### Design Statement
 I will design and make a social network for all bakers on campus. The social network will focus on the sharing of dessert recipes with the ISAK community and will be constructed using Python, HTML, CSS, SQLite, and Flask. It will take approximately four weeks to make and will be evaluated according to the criteria given.
 
-### Success Criteria:
+### Success Criteria
 1. The social network has a secure registration and login system.
 2. Recipes can be posted on the social networks. 
 3. Users can edit or delete their posts and comments.
@@ -56,7 +56,7 @@ I will design and make a social network for all bakers on campus. The social net
 
 
 ### Record of Tasks
-| Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
+| Task No. | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1 |  Define problem context | A concise problem definition that will allow the developer (me) identify all the necessary components of the project | 20 min | April 13 | A | 
 | 2 | Write proposed solution and rationale | A concrete and reasoned solution that addresses the issue exposed | 30 min | April 13 | A |
