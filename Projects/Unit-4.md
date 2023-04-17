@@ -7,7 +7,12 @@
 Often times, students are ISAK are not satisfied with the limited dessert options provided by CK. The same chocolate chip cookies, sunflower cake and jelly get incredibly repetitive, leaving students with only one option: make their own desserts. Some students, including myself, in order to spread their creations, have shared their recipes in class group chats so others can learn from them. Unfortunately, these recipes are often forgotten and even worse, neglected. Bakers at ISAK are in immediate need of a social network which will allow them to share recipes and connect with each other and their cultures. 
 
 ### Success Criteria:
-1. 
+1. The social network has a secure registration and login system.
+2. Recipes can be posted on the social networks. 
+3. Users can edit or delete their posts and comments.
+4. Comments can be made under other users’ posts.
+5. Users can search for others’ profiles and recipes. 
+6. Different users' profiles can be viewed 
 
 ### Design Statement
 
@@ -51,8 +56,8 @@ Often times, students are ISAK are not satisfied with the limited dessert option
 ### Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1 |  Define problem context | A concise problem definition 20 min | April 13 | A | 
-| 2 | 
+| 1 |  Define problem context | A concise problem definition | 20 min | April 13 | A | 
+| 2 | Define succes criteria | Clear expected outcomes for the project | 10 min | April 13 | A |
 
 
 ### Techniques Used
