@@ -16,7 +16,7 @@ I will design and make a social network for all bakers in ISAK. The social netwo
 3. Comments can be made under other users’ posts.
 4. Users can edit or delete their posts and comments.
 5. Users can search for others’ profiles and recipes. 
-6. Users can save published posts.  
+6. Users can save published posts in their own collections.  
 
 ### Rationale for Proposed Solution
 
