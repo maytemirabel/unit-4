@@ -6,23 +6,25 @@
 ### Problem Definition
 Often times, students are ISAK are not satisfied with the limited dessert options provided by CK. The same chocolate chip cookies, sunflower cake and jelly get incredibly repetitive, leaving students with only one option: make their own desserts. Some students, including myself, in order to spread their creations, have shared their recipes in class group chats so others can learn from them. Unfortunately, these recipes are often forgotten and even worse, neglected. Bakers at ISAK are in immediate need of a social network which will allow them to share recipes and connect with each other and their cultures. 
 
+*Refer to Figure - [^2] in Appendix for evidence of consultation.*
+
 ### Design Statement
-I will design and make a social network for all bakers on campus. The social network will focus on the sharing of dessert recipes with the ISAK community and will be constructed using Python, HTML, CSS, SQLite, and Flask. It will take approximately four weeks to make and will be evaluated according to the criteria given.
+I will design and make a social network for all bakers in ISAK. The social network will focus on the sharing of dessert recipes with the campus community and will be constructed using Python, HTML, CSS, SQLite, and Flask. It will take approximately four weeks to make and will be evaluated according to the criteria below.
 
 ### Success Criteria
 1. The social network has a secure registration and login system.
 2. Recipes can be posted on the social networks. 
-3. Users can edit or delete their posts and comments.
-4. Comments can be made under other users’ posts.
+3. Comments can be made under other users’ posts.
+4. Users can edit or delete their posts and comments.
 5. Users can search for others’ profiles and recipes. 
-6. Different users' profiles can be viewed 
+6. Users can save published posts.  
 
 ### Rationale for Proposed Solution
 
 
 [^1]: Pinterest. 13 Apr. 2023, https://www.pinterest.co.uk/pin/199917670945980784/.
 
-[^2]:UpGrad. "10 Reasons Why Python is Popular with Developers." UpGrad Blog, UpGrad Education Private Limited, 28 Feb. 2020, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/#:~:text=The%20python%20language%20is%20one,faster%20than%20other%20programming%20languages.
+[^3]:UpGrad. "10 Reasons Why Python is Popular with Developers." UpGrad Blog, UpGrad Education Private Limited, 28 Feb. 2020, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/#:~:text=The%20python%20language%20is%20one,faster%20than%20other%20programming%20languages.
 
 ## Criteria B: Solution
 ### System Diagram
@@ -74,7 +76,7 @@ I will design and make a social network for all bakers on campus. The social net
 ## Criteria D: Functionality and Testability 
 
 ## Criteria E: Evaluation (Appendix)
-### Evidence of consultation
-<img width="645" alt="Screen Shot 2023-04-19 at 11 38 49" src="https://user-images.githubusercontent.com/105724334/232953946-9d9535c1-75a0-49fc-81a2-b534cffa7dce.png">
+### Evidence of consultation 
+[^2]: <img width="645" alt="Screen Shot 2023-04-19 at 11 38 49" src="https://user-images.githubusercontent.com/105724334/232953946-9d9535c1-75a0-49fc-81a2-b534cffa7dce.png">
 
 ##### Figure . Baker at ISAK confirming the need for a recipe sharing social network 
