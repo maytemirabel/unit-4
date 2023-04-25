@@ -12,11 +12,11 @@ I will design and make a social network for all bakers in ISAK. The social netwo
 
 ### Success Criteria
 1. The social network has a secure registration and login system.
-2. Recipes can be posted on the social networks. 
-3. Comments can be made under other users’ posts.
-4. Users can edit or delete their posts and comments.
-5. Users can search for others’ profiles and recipes. 
-6. Users can save published posts in their own collections.  
+2. Recipes can be uploaded as social media posts.
+3. Comments can be made by the users under others’ posts. 
+4. Each user has their own profile page where their posts are displayed. 
+5. Users can edit or delete their posts and comments. 
+6. Users can search for others’ profiles and recipes. 
 
 ### Rationale for Proposed Solution
 The social network A Piece of Cake will allow students to share their dessert recipes. This network will be a lot more productive than sending recipes out on class group chats, for instance, as all of the recipes will be found in the same place. There will be no need to scroll through chats in search for recipes as such will be neatly and concisely posted on the network. Not only will ISAK students’ recipes be published, but the community of bakers will grow as people will be able to interact with each other and form bonds due to their shared passion: baking. 
@@ -78,7 +78,8 @@ The proposed solution will use SQLite as its database management system is effic
 | 4 | Write desgin statement | A clear plan and goal of the project | 10 min | April 13 | A | 
 | 5 | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
 | 6 | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | April 14 | A | 
-| 7 | 
+| 7 | Citing sources | The resources used during the reserach portion are cited following MLA format | 20 min | April 14 | A |
+| 8 | 
 
 ## Criteria C: Development
 ### Techniques Used
