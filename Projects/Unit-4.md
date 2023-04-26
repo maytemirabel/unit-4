@@ -45,6 +45,7 @@ The proposed solution will use SQLite as its database management system is effic
 ##### Figure 1. The System Diagram For the Application
 
 ### Wireframe
+![IMG_0764](https://user-images.githubusercontent.com/105724334/234566255-509cd654-499d-46bb-a19e-ef6445e0dee1.jpg)
 
 ##### Figure 2. The Wireframe for the Application
 
@@ -79,9 +80,10 @@ The proposed solution will use SQLite as its database management system is effic
 | 5 | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
 | 6 | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | April 14 | A | 
 | 7 | Citing sources | The resources used during the reserach portion are cited following MLA format | 20 min | April 14 | A |
-| 8 | System Diagram
-| 9 | Wireframe 
+| 8 | System Diagram | 
+| 9 | Draw the website's wireframe | Visual illutration of the website's structure | 40 min | April 15 | B | 
 | 10 | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
+| 11 | 
 
 
 ## Criteria C: Development
