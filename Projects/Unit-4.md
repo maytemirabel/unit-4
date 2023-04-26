@@ -12,11 +12,11 @@ I will design and make a social network for all bakers in ISAK. The social netwo
 
 ### Success Criteria
 1. The social network has a secure registration and login system.
-2. Recipes can be uploaded as social media posts.
-3. Comments can be made by the users under others’ posts. 
-4. Each user has their own profile page where their posts are displayed. 
-5. Users can edit or delete their posts and comments. 
-6. Users can search for others’ profiles and recipes. 
+2. Recipes can be uploaded as a social media post.
+3. Each user has their own profile page where their posts are displayed. 
+4. Users can edit or delete their posts. 
+5. Users can search for others’ profiles and recipes. 
+6. User will be able to convert values from grams to tablespoons and vice versa. 
 
 ### Rationale for Proposed Solution
 The social network A Piece of Cake will allow students to share their dessert recipes. This network will be a lot more productive than sending recipes out on class group chats, for instance, as all of the recipes will be found in the same place. There will be no need to scroll through chats in search for recipes as such will be neatly and concisely posted on the network. Not only will ISAK students’ recipes be published, but the community of bakers will grow as people will be able to interact with each other and form bonds due to their shared passion: baking. 
