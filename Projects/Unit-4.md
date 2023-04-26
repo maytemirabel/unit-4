@@ -48,10 +48,10 @@ The proposed solution will use SQLite as its database management system is effic
 
 ##### Figure 2. The Wireframe for the Application
 
-
 ### ER Diagram
+![IMG_B5BCEDEBDD82-1](https://user-images.githubusercontent.com/105724334/234288189-d14e4fe6-d166-4a73-a437-eddd53e8875e.jpeg)
 
-##### Figure 3. ER Diagram For the Attributes Requested By the Client
+##### Figure 3. ER Diagram
 
 ### UML Diagram
 
@@ -79,7 +79,10 @@ The proposed solution will use SQLite as its database management system is effic
 | 5 | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
 | 6 | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | April 14 | A | 
 | 7 | Citing sources | The resources used during the reserach portion are cited following MLA format | 20 min | April 14 | A |
-| 8 | 
+| 8 | System Diagram
+| 9 | Wireframe 
+| 10 | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
+
 
 ## Criteria C: Development
 ### Techniques Used
