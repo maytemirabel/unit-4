@@ -80,7 +80,7 @@ The proposed solution will use SQLite as its database management system is effic
 | 5 | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
 | 6 | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | April 14 | A | 
 | 7 | Citing sources | The resources used during the reserach portion are cited following MLA format | 20 min | April 14 | A |
-| 8 | System Diagram | 
+| 8 | System Diagram | A visual idea of the software and hardware requirements involved in the development of the application | 50 min | April 15 | B |
 | 9 | Draw the website's wireframe | Visual illutration of the website's structure | 40 min | April 15 | B | 
 | 10 | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
 | 11 | 
