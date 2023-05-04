@@ -16,7 +16,7 @@ I will design and make a social network for all bakers in ISAK. The social netwo
 3. Each user has their own profile page where their posts are displayed. 
 4. Users can edit or delete their posts. 
 5. Users can search for others’ profiles and recipes. 
-6. User will be able to convert values from grams to tablespoons and vice versa. 
+6. User will be able to convert values from grams to ounces and vice versa. 
 
 ### Rationale for Proposed Solution
 The social network A Piece of Cake will allow students to share their dessert recipes. This network will be a lot more productive than sending recipes out on class group chats, for instance, as all of the recipes will be found in the same place. There will be no need to scroll through chats in search for recipes as such will be neatly and concisely posted on the network. Not only will ISAK students’ recipes be published, but the community of bakers will grow as people will be able to interact with each other and form bonds due to their shared passion: baking. 
@@ -71,21 +71,24 @@ The proposed solution will use SQLite as its database management system is effic
 |--------|-----------|-------------|-------|---------|
 
 ### Record of Tasks
-| Task No. | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
-|---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1 |  Define problem context | A concise problem definition that will allow the developer (me) identify all the necessary components of the project | 20 min | April 13 | A | 
-| 2 | Consult potential network users | Confirmation of what the issue is and how to solve it | 10 min | April 13 | A | 
-| 3 | Write proposed solution and rationale | A concrete and reasoned solution that addresses the issue exposed | 30 min | April 13 | A |
-| 4 | Write desgin statement | A clear plan and goal of the project | 10 min | April 13 | A | 
-| 5 | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
-| 6 | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | April 14 | A | 
-| 7 | Citing sources | The resources used during the reserach portion are cited following MLA format | 20 min | April 14 | A |
-| 8 | System Diagram | A visual idea of the software and hardware requirements involved in the development of the application | 50 min | April 15 | B |
-| 9 | Draw the website's wireframe | Visual illutration of the website's structure | 40 min | April 15 | B | 
-| 10 | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
-| 11 | Create UML diagram | A visual representation that showcases the multiple classes and methods used | 40 min | April 16 | B |
-| 12 | Initialize Database Handler | Set-up the base for the databse in order for functions to be added	| 15 min	| April 17	| C |
-| 13 | 
+| Task No. | Design Cycle Step | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
+|---------|------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1 |  Planning | Define problem context | A concise problem definition that will allow the developer (me) identify all the necessary components of the project | 20 min | April 13 | A | 
+| 2 | Planning | Consult potential network users | Confirmation of what the issue is and how to solve it | 10 min | April 13 | A | 
+| 3 | Planning | Write proposed solution and rationale | A concrete and reasoned solution that addresses the issue exposed | 30 min | April 13 | A |
+| 4 | Planning| Write design statement | A clear plan and goal of the project | 10 min | April 13 | A | 
+| 5 | Planning | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
+| 6 | Planning | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | April 14 | A | 
+| 7 | Designing | System Diagram | A visual idea of the software and hardware requirements involved in the development of the application | 50 min | April 15 | B |
+| 8 | Designing | Draw the website's wireframe | Visual illutration of the website's overall structure | 40 min | April 15 | B | 
+| 9 | Designing | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
+| 10 | Designing | Create UML diagram | A visual representation that showcases the multiple classes and methods used | 40 min | April 16 | B |
+| 11 | Development | Initialize database handler | Set-up the database where all information will be saved in an organized manner	| 15 min	| April 17	| C |
+| 12 | Development | Create the Login Page | A secure system that allows the user to access the website using an existing username and password | 40 min | April 17 | C | 
+| 13 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
+| 14 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
+| 15 | 
+
 
 ## Criteria C: Development
 ### Techniques Used
@@ -95,7 +98,9 @@ The proposed solution will use SQLite as its database management system is effic
 
 ## Criteria D: Functionality and Testability 
 
-## Criteria E: Evaluation (Appendix)
+## Criteria E: Evaluation
+
+## Appendix
 ### Evidence of consultation 
 <img width="645" alt="Screen Shot 2023-04-19 at 11 38 49" src="https://user-images.githubusercontent.com/105724334/232953946-9d9535c1-75a0-49fc-81a2-b534cffa7dce.png">
 
