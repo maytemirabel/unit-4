@@ -83,8 +83,9 @@ The proposed solution will use SQLite as its database management system is effic
 | 8 | System Diagram | A visual idea of the software and hardware requirements involved in the development of the application | 50 min | April 15 | B |
 | 9 | Draw the website's wireframe | Visual illutration of the website's structure | 40 min | April 15 | B | 
 | 10 | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
-| 11 | 
-
+| 11 | Create UML diagram | A visual representation that showcases the multiple classes and methods used | 40 min | April 16 | B |
+| 12 | Initialize Database Handler | Set-up the base for the databse in order for functions to be added	| 15 min	| April 17	| C |
+| 13 | 
 
 ## Criteria C: Development
 ### Techniques Used
