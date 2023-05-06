@@ -87,9 +87,9 @@ The ER diagram shows the relationships
 | 11 | Designing | Draw flowcharts | Diagrams that outline the sequence of snipets of the overall program | 40 min | April 16 | B |
 | 12 | Development | Initialize database handler | Set-up the database where all information will be saved in an organized manner	| 15 min	| April 17	| C |
 | 13 | Development | Create the Login Page | A secure system that allows the user to access the website using an existing username and password | 40 min | April 17 | C | 
-| 14 | Development | Build the CSS for the Login Page | An improved front-end of the website which users will be able to enjoy | 40 min | April 17 | C | 
+| 14 | Development | Build the CSS for the Login Page | An improved front-end of the website's login in page which users will be able to enjoy and navigate through the website | 40 min | April 17 | C | 
 | 15 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
-| 14 | Development | Build the CSS for the Register Page |  | 30 min | April 17 | C | 
+| 14 | Development | Build the CSS for the Register Page | An improved front-end of the website's register which users will be able to enjoy and navigate through the website  | 30 min | April 17 | C | 
 | 16 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
 
 ## Criteria C: Development
