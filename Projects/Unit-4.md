@@ -74,8 +74,8 @@ The ER diagram shows the relationships
 ### Record of Tasks
 | Task No. | Design Cycle Step | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1 |  Planning | Define problem context | A concise problem definition that will allow the developer (me) identify all the necessary components of the project | 20 min | April 13 | A | 
-| 2 | Planning | Consult potential network users | Confirmation of what the issue is and how to solve it | 10 min | April 13 | A | 
+| 1 |  Planning | Define problem context | A concise problem definition that will allow the developer (me) identify all the necessary components to solve the problem | 20 min | April 13 | A | 
+| 2 | Planning | Consult potential network users | Confirmation of what the issue is and feedback on potential solution | 10 min | April 13 | A | 
 | 3 | Planning | Write proposed solution and rationale | A concrete and reasoned solution that addresses the issue exposed | 30 min | April 13 | A |
 | 4 | Planning| Write design statement | A clear plan and goal of the project | 10 min | April 13 | A | 
 | 5 | Planning | Define success criteria | Clear needs and expectations of the project are outlined  | 20 min | April 14 | A |
@@ -84,20 +84,38 @@ The ER diagram shows the relationships
 | 8 | Designing | Draw the website's wireframe | Visual illutration of the website's overall structure | 40 min | April 15 | B | 
 | 9 | Designing | Create ER diagram | A diagram that illustrates the objects in the website and how they relate to each other | 30 min | April 16 | B | 
 | 10 | Designing | Create UML diagram | A visual representation that showcases the multiple classes and methods used | 40 min | April 16 | B |
-| 11 | Development | Initialize database handler | Set-up the database where all information will be saved in an organized manner	| 15 min	| April 17	| C |
-| 12 | Development | Create the Login Page | A secure system that allows the user to access the website using an existing username and password | 40 min | April 17 | C | 
-| 13 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
-| 14 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
-| 15 | 
-
+| 11 | Designing | Draw flowcharts | Diagrams that outline the sequence of snipets of the overall program | 40 min | April 16 | B |
+| 12 | Development | Initialize database handler | Set-up the database where all information will be saved in an organized manner	| 15 min	| April 17	| C |
+| 13 | Development | Create the Login Page | A secure system that allows the user to access the website using an existing username and password | 40 min | April 17 | C | 
+| 14 | Development | Build the CSS for the Login Page | An improved front-end of the website which users will be able to enjoy | 40 min | April 17 | C | 
+| 15 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
+| 14 | Development | Build the CSS for the Register Page |  | 30 min | April 17 | C | 
+| 16 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
 
 ## Criteria C: Development
-### Techniques Used
-1. 
+### Tools Utilized
+| Tools | Explanation of Use |
+|-------|---------|
+| Flask Library | |
+| PyCharm | |
+| Python | |
+| HTML/CSS | | 
+| SQLite |  |
+| Chat CPT | |
+
+### Techniques Utilized
+| Techniques | Explanation of Use |
+|-------|---------|
+| For loops | |
+| If-else statements | |
+| Functions | | 
+| Password encryption | | 
+| Database interaction (SQLite) | | 
+| HTTP Cookies | | 
 
 ### Setting up tools needed
 
-## Criteria D: Functionality and Testability 
+## Criteria D: Functionality and Extensibility  
 
 ## Criteria E: Evaluation
 
