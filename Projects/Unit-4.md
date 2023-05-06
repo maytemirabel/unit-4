@@ -101,7 +101,7 @@ The ER diagram shows the relationships
 | Python | |
 | HTML/CSS | | 
 | SQLite |  |
-| Chat CPT | |
+| Chat GPT | Consultation for problem solving |
 
 ### Techniques Utilized
 | Techniques | Explanation of Use |
