@@ -14,7 +14,7 @@ I will design and make a social network for all bakers in ISAK. The social netwo
 1. The social network has a secure registration and login system.
 2. Recipes can be uploaded as a social media post.
 3. Each user has their own profile page where their posts are displayed. 
-4. Users can edit or delete their posts. 
+4. Users can delete their posts. 
 5. Users can search for others’ profiles and recipes. 
 6. User will be able to convert values from grams to ounces and vice versa. 
 
@@ -68,7 +68,7 @@ The ER diagram shows the relationships
 ##### Figure 7. Flow diagram of
 
 ### Test Plan
-| Test No| Test type | Description | Input / Procedure | Outcome |
+| Test No. | Test type | Description | Input / Procedure | Outcome |
 |--------|-----------|-------------|-------|---------|
 
 ### Record of Tasks
