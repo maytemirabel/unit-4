@@ -50,10 +50,11 @@ The proposed solution will use SQLite as its database management system is effic
 ##### Figure 2. The Wireframe for the Application
 
 ### ER Diagram
-![IMG_B5BCEDEBDD82-1](https://user-images.githubusercontent.com/105724334/234288189-d14e4fe6-d166-4a73-a437-eddd53e8875e.jpeg)
+<img width="1128" alt="Screen Shot 2023-05-07 at 22 39 28" src="https://user-images.githubusercontent.com/105724334/236680951-8d76e354-9891-449a-936c-7a226cf6de89.png">
+
 
 ##### Figure 3. ER Diagram
-The ER diagram shows the relationships 
+The ER diagram shows the two tables: users and posts, and how they relate to each other within the system. 
 
 ### UML Diagram
 
