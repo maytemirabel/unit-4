@@ -52,7 +52,6 @@ The proposed solution will use SQLite as its database management system is effic
 ### ER Diagram
 <img width="1128" alt="Screen Shot 2023-05-07 at 22 39 28" src="https://user-images.githubusercontent.com/105724334/236680951-8d76e354-9891-449a-936c-7a226cf6de89.png">
 
-
 ##### Figure 3. ER Diagram
 The ER diagram shows the two tables: users and posts, and how they relate to each other within the system. 
 
@@ -92,17 +91,38 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 | 15 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
 | 14 | Development | Build the CSS for the Register Page | An improved front-end of the website's register which users will be able to enjoy and navigate through the website  | 30 min | April 17 | C | 
 | 16 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
+| 17 | Development | Construct CSS for the Home Page | A clear and visiually-pleasing front-end of the Home page | 40 min | April 18 | C |
+| 18 | Development | Build the Search Bar | A tool that fascilitates the search of recipes uploaded to the website | 50 min | April 18 | C |
+| 19 | Development | Create the Profile Page | If logged in, user will be able to view posts they have published | 50 min | April 19 | C |
+| 20 | Development | Build the CSS for the Profile Page | A 
+| 21 | Development | 
+| 22 | Development | 
+| 23 | Development | 
+| 24 | Development | 
+| 25 | Development | 
+| 26 | Development | 
+| 27 | Development | 
+| 28 | Development | 
+| 29 | Development | 
+| 30 | Development | 
+| 31 | Development | 
+| 32 | Development | 
+| 33 | Development | 
+| 34 | Development | 
+| 35 | Development | 
+| 36 | Development | 
 
 ## Criteria C: Development
 ### Tools Utilized
 | Tools | Explanation of Use |
 |-------|---------|
-| Flask Library | |
-| PyCharm | |
-| Python | |
-| HTML/CSS | | 
-| SQLite |  |
-| Chat GPT | Consultation for problem solving |
+| Flask Library | As Python's web framework, it enabled the use of templates, cookies and other elements essential to website development. |
+| PyCharm | PyCharm was the software in which the website launched from. |
+| Python | This language was used for the development of the website. Its extensive tools and website-developing specific libraries were especially helpful.  |
+| HTML/CSS | Together, HTML and CSS formed the front-end of the website. HTML assembled the strcuture and content of the web pages while CSS tackled the design and layout aspect. The two were utilized to make the website engaging and user-friendly. | 
+| SQLite | In order to store all of the sets of information on the client-side of the website, SQLite was used. As a database management system, all of the data the user input was saved in a database called **project4.db**. |
+| Chat GPT | This tool was used for problem solving consultation when the root cause of the issue was not easy to undertand nor identify. |
+
 
 ### Techniques Utilized
 | Techniques | Explanation of Use |
