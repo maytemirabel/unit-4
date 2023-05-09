@@ -5,7 +5,7 @@
 ## Criteria A: Planning
 ### Problem Definition
 Often times, students are ISAK are not satisfied with the limited dessert options provided by CK. The same chocolate chip cookies, sunflower cake and jelly get incredibly repetitive, leaving students with only one option: make their own desserts. Some students, including myself, in order to spread their creations, have shared their recipes in class group chats so others can learn from them. Unfortunately, these recipes are often forgotten and even worse, neglected. Bakers at ISAK are in immediate need of a social network which will allow them to share recipes and connect with each other and their cultures. 
-###### *Refer to Figure - in Appendix for evidence of consultation.*
+###### *Refer to Fig. 8 in Appendix for evidence of consultation.*
 
 ### Design Statement
 I will design and make a social network for all bakers in ISAK. The social network will focus on the sharing of dessert recipes with the campus community and will be constructed using Python, HTML, CSS, SQLite, and Flask. It will take approximately four weeks to make and will be evaluated according to the criteria below.
@@ -92,14 +92,14 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 | 15 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
 | 14 | Development | Build the CSS for the Register Page | An improved front-end of the website's register which users will be able to enjoy and navigate through the website  | 30 min | April 17 | C | 
 | 16 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
-| 17 | Development | Construct CSS for the Home Page | A clear and visiually-pleasing front-end of the Home page | 40 min | April 18 | C |
-| 18 | Development | Build the Search Bar | A tool that fascilitates the search of recipes uploaded to the website | 50 min | April 18 | C |
-| 19 | Development | Create the Profile Page | If logged in, user will be able to view posts they have published | 50 min | April 19 | C |
-| 20 | Development | Build the CSS for the Profile Page | A 
-| 21 | Development | 
-| 22 | Development | 
-| 23 | Development | 
-| 24 | Development | 
+| 17 | Testing | Unit Testing for Login & Register Page | Feedback will be gathered to deduce the functionality of the pages | 30 min | April 18 | B | 
+| 18 | Development | Construct CSS for the Home Page | A clear and visually-pleasing front-end of the Home page | 40 min | April 18 | C |
+| 19 | Development | Build the Search Bar | A tool that fascilitates the search of recipes uploaded to the website | 50 min | April 18 | C |
+| 20 | Development | Create the Profile Page | If logged in, user will be able to view posts they have published | 50 min | April 19 | C |
+| 21 | Development | Build the CSS for the Profile Page | An aesthetic display of the user's information | 40 min | April 19 | C |
+| 22 | Development | Develop the New Post Page | Users will be able to upload their recipes to the website | 60 min | April 19 | C | 
+| 23 | Development | Create the CSS for the New Post Page | Clear visuals that guide the user through the recipe-uploading process | 50 min | April 20 | C |
+| 24 | Testing | Unit testing for New Post Page | Insights on the New Post Page and whether the inputs are saved in the database connected | 30 min | April 30 | B | 
 | 25 | Development | 
 | 26 | Development | 
 | 27 | Development | 
@@ -112,6 +112,7 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 | 34 | Development | 
 | 35 | Development | 
 | 36 | Development | 
+| 37 | Development | 
 
 ## Criteria C: Development
 ### Tools Utilized
@@ -123,7 +124,6 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 | HTML/CSS | Together, HTML and CSS formed the front-end of the website. HTML assembled the strcuture and content of the web pages while CSS tackled the design and layout aspect. The two were utilized to make the website engaging and user-friendly. | 
 | SQLite | In order to store all of the sets of information on the client-side of the website, SQLite was used. As a database management system, all of the data the user input was saved in a database called **project4.db**. |
 | Chat GPT | This tool was used for problem solving consultation when the root cause of the issue was not easy to undertand nor identify. |
-
 
 ### Techniques Utilized
 | Techniques | Explanation of Use |
@@ -145,6 +145,6 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 ### Evidence of consultation 
 <img width="645" alt="Screen Shot 2023-04-19 at 11 38 49" src="https://user-images.githubusercontent.com/105724334/232953946-9d9535c1-75a0-49fc-81a2-b534cffa7dce.png">
 
-##### Figure . Baker at ISAK confirming the need for a recipe sharing social network 
+##### Figure 8. Baker at ISAK confirming the need for a recipe sharing social network 
 
 ### Works Cited
