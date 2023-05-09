@@ -46,9 +46,9 @@ The proposed solution will use SQLite as its database management system is effic
 The system diagram is a visual model of the application, its components and their interactions. As shown on Fig. 1, the input is done through a keyboard and the output is manifested on the display (screen.) Although the website runs on a web browser, all of the various inputs made by the user will be saved in a local SQL database called **project4.db**.
 
 ### Wireframe
-![IMG_0764](https://user-images.githubusercontent.com/105724334/234566255-509cd654-499d-46bb-a19e-ef6445e0dee1.jpg)
-
+![Comp Sci-8](https://github.com/maytemirabel/unit-4/assets/105724334/9a8ec83c-8199-4a74-8ab8-6949b2a62f26)
 ##### Figure 2. The Wireframe for the Application
+The wireframe provides a visual representation of the website's design before any code is made. It also displays the functionalities of every button planned out to be utilized, which is helpful as the developer as there is a model to refer back to if in doubt.  
 
 ### ER Diagram
 <img width="1128" alt="Screen Shot 2023-05-07 at 22 39 28" src="https://user-images.githubusercontent.com/105724334/236680951-8d76e354-9891-449a-936c-7a226cf6de89.png">
