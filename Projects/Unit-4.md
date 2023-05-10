@@ -105,7 +105,7 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 22 | Development | Develop the New Post Page | Users will be able to upload their recipes to the website | 60 min | April 19 | C | 
 | 23 | Development | Create the CSS for the New Post Page | Clear visuals that guide the user through the recipe-uploading process | 50 min | April 20 | C |
 | 24 | Testing | Unit testing for New Post Page | Insights on the New Post Page and whether the inputs are saved in the database connected | 30 min | April 30 | B | 
-| 25 | Development | Construct the Landing Page | Page any 
+| 25 | Development | Construct the Landing Page | Pag
 | 26 | Development | Build the CSS for the Landing Page |
 | 27 | Development | Create the Converter Page | 
 | 28 | Development | Put together the CSS for the Converter Page |
@@ -113,7 +113,7 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 30 | Development | Code Delete Post system |
 | 31 | Development | Finalize all functionality codes | 
 | 32 | Development | Finalize all CSS | 
-| 33 | Implementation | Beta Testing of finalized website | 
+| 33 | Implementation | Beta Testing of finalized website | Feedback is collected based on observations made by the users | 30 min | May | 
 | 34 | Developement | Improve website based on feedback gathered | 
 | 35 | Implementation | Evaluation by Client |  
 | 36 | Development | Final touches based on Client's observations |
