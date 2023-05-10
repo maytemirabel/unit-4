@@ -59,6 +59,7 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 ### UML Diagram
 
 ##### Figure 4. The UML Diagram For the Classes In the Application
+The UML diagram allows easy vizualization of the website before it is developed. The system's classes, attributes, and methods are displayed. 
 
 ### Flow Diagrams
 
