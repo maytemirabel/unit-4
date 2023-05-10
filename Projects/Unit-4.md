@@ -46,7 +46,8 @@ The proposed solution will use SQLite as its database management system is effic
 The system diagram is a visual model of the application, its components and their interactions. As shown on Fig. 1, the input is done through a keyboard and the output is manifested on the display (screen.) Although the website runs on a web browser, all of the various inputs made by the user will be saved in a local SQL database called **project4.db**.
 
 ### Wireframe
-![Comp Sci-8](https://github.com/maytemirabel/unit-4/assets/105724334/9a8ec83c-8199-4a74-8ab8-6949b2a62f26)
+![Comp Sci-8 2](https://github.com/maytemirabel/unit-4/assets/105724334/28878d86-4908-4153-9ece-dc61707eec19)
+
 ##### Figure 2. The Wireframe for the Application
 The wireframe provides a visual representation of the website's design before any code is made. It also displays the functionalities of every button planned out to be utilized, which is helpful as the developer as there is a model to refer back to if in doubt.  
 
@@ -57,9 +58,11 @@ The wireframe provides a visual representation of the website's design before an
 The ER diagram shows the two tables: users and posts, and how they relate to each other within the system. 
 
 ### UML Diagram
+<img width="506" alt="Screen Shot 2023-05-10 at 20 45 23" src="https://github.com/maytemirabel/unit-4/assets/105724334/1f871705-b656-4bc3-97d7-bb536fa27418">
+
 
 ##### Figure 4. The UML Diagram For the Classes In the Application
-The UML diagram allows easy vizualization of the website before it is developed. The system's classes, attributes, and methods are displayed. 
+The UML diagram allows easy vizualization of the website before it is developed. The diagram shown in Fig. 4 vizualises the handling database interactions, such as executing queries, saving changes, and closing the connection.
 
 ### Flow Diagrams
 
