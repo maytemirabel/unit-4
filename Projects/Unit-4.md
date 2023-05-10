@@ -121,16 +121,18 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 38 | Functionality | Film final video | A video walking through the overall functionality of the completed website | 30 min | May 9 | D | 
 | 39 | Evaluation | Deliver final product to client | Client's requirements and needs are met | 10 min | May 10 | E | 
 
+
 ## Criteria C: Development
+
 ### Tools Utilized
 | Tools | Explanation of Use |
 |-------|---------|
 | Flask Library | As Python's web framework, it enabled the use of templates, cookies and other elements essential to website development. |
-| PyCharm | PyCharm was the software in which the website launched from. |
-| Python | This language was used for the development of the website. Its extensive tools and website-developing specific libraries were especially helpful.  |
+| PyCharm | PyCharm was the software in which the website was developed in. |
+| Python | This language was used for the development of the website. Its extensive tools and website-developing specific libraries were especially helpful throughout the process.  |
 | HTML/CSS | Together, HTML and CSS formed the front-end of the website. HTML assembled the strcuture and content of the web pages while CSS tackled the design and layout aspect. The two were utilized to make the website engaging and user-friendly. | 
 | SQLite | In order to store all of the sets of information on the client-side of the website, SQLite was used. As a database management system, all of the data the user input was saved in a database called **project4.db**. |
-| Chat GPT | This tool was used for problem solving consultation when the root cause of the issue was not easy to undertand nor identify. |
+| Chat GPT | This tool was used for problem solving consultation when the root cause of the issue was not easy to understand nor identify. Furthermore, code logistics and general ideas were developed with the help of this tool. |
 
 ### Techniques Utilized
 | Techniques | Explanation of Use |
