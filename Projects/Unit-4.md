@@ -97,27 +97,27 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 15 | Development | Create the Register Page | Users will be able to create an account in order to access the website | 50 min | April 17 | C |
 | 14 | Development | Build the CSS for the Register Page | An improved front-end of the website's register which users will be able to enjoy and navigate through the website  | 30 min | April 17 | C | 
 | 16 | Development | Create the Home Page | The screen the user encounters with when logged in to the website | 40 min | April 18 | C | 
-| 17 | Testing | Unit Testing for Login & Register Page | Feedback will be gathered to deduce the functionality of the pages | 30 min | April 18 | B | 
+| 17 | Testing | Unit Testing for Login & Register Page | Feedback will be gathered to deduce the functionality of the pages | 30 min | April 18 | C | 
 | 18 | Development | Construct CSS for the Home Page | A clear and visually-pleasing front-end of the Home page | 40 min | April 18 | C |
 | 19 | Development | Build the Search Bar | A tool that fascilitates the search of recipes uploaded to the website | 50 min | April 18 | C |
 | 20 | Development | Create the Profile Page | If logged in, user will be able to view posts they have published | 50 min | April 19 | C |
 | 21 | Development | Build the CSS for the Profile Page | An aesthetic display of the user's information | 40 min | April 19 | C |
 | 22 | Development | Develop the New Post Page | Users will be able to upload their recipes to the website | 60 min | April 19 | C | 
 | 23 | Development | Create the CSS for the New Post Page | Clear visuals that guide the user through the recipe-uploading process | 50 min | April 20 | C |
-| 24 | Testing | Unit testing for New Post Page | Insights on the New Post Page and whether the inputs are saved in the database connected | 30 min | April 30 | B | 
-| 25 | Development | Construct the Landing Page | Pag
-| 26 | Development | Build the CSS for the Landing Page |
-| 27 | Development | Create the Converter Page | 
-| 28 | Development | Put together the CSS for the Converter Page |
-| 29 | Development | Set-up Logout system | 
-| 30 | Development | Code Delete Post system |
-| 31 | Development | Finalize all functionality codes | 
-| 32 | Development | Finalize all CSS | 
-| 33 | Implementation | Beta Testing of finalized website | Feedback is collected based on observations made by the users | 30 min | May | 
-| 34 | Developement | Improve website based on feedback gathered | 
-| 35 | Implementation | Evaluation by Client |  
-| 36 | Development | Final touches based on Client's observations |
-| 37 | Evaluation | Evaluate the success criteria's level of accomplishment | 
+| 24 | Testing | Unit testing for New Post Page | Insights on the New Post Page and whether the inputs are saved in the database connected | 30 min | April 30 | C | 
+| 25 | Development | Construct the Landing Page | Page user will be able to either log in to their account or register a new account | 40 min | May 1 | C |
+| 26 | Development | Build the CSS for the Landing Page | An easy-to-use and optically satisfying website page users can interact with | 50 min | May 1 | C |
+| 27 | Development | Create the Converter Page | When used, users can obtain a certain value in a selected unit in its conversion in another unit | 70 min | May 2 | C |
+| 28 | Development | Put together the CSS for the Converter Page | Simple and easy to interact amount converter page | 80 min | May 2 | C |
+| 29 | Development | Set-up Logout system | Allows client to log out of their accounts and returns to Landing Page | 30 min | May 3 | C |
+| 30 | Development | Code Delete Post system | Users can delete posts from the database they have uploaded | 70 min | May 3 | C |
+| 31 | Development | Finalize all functionality codes | Ensure all pieces of code perform as expected | 50 min | May 5 | C |
+| 32 | Development | Finalize all CSS | Confirm the website's overall front-end is satisfactory and easy to use | 60 min | May 6 | C |
+| 33 | Testing | Beta Testing of finalized website | Feedback is collected based on observations made by the test users | 30 min | May 7 | C | 
+| 34 | Development | Beta Developing | Improved website based on feedback gathered | 50 min | May 7 | C |
+| 35 | Implementation | Evaluation by Client | Client feedback is gathered for further improvement | 20 min | May 8 | E | 
+| 36 | Development | Final touches based on Client's observations | Refering back to the client's observations, improvements are made | 40 min | May 8 | C |
+| 37 | Evaluation | Evaluate the success criteria's level of accomplishment | Assess whether the needs established at the start of the project have been met or not | 30 min | May 9 | E | 
 | 38 | Functionality | Film final video | A video walking through the overall functionality of the completed website | 30 min | May 9 | D | 
 | 39 | Evaluation | Deliver final product to client | Client's requirements and needs are met | 10 min | May 10 | E | 
 
