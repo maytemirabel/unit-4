@@ -137,12 +137,12 @@ The UML diagram allows easy vizualization of the website before it is developed.
 ### Techniques Utilized
 | Techniques | Explanation of Use |
 |-------|---------|
-| For loops | |
-| If-else statements | |
-| Functions | | 
-| Password encryption | | 
-| Database interaction (SQLite) | | 
-| HTTP Cookies | | 
+| For loops | This kind of loop allowed certain pieces of code to be executed repeatedly for a specified number of times or until a certain condition was met.  |
+| If-else statements | These conditional statements permitted the execution of different blocks of code depending on whether a condition is true or false. It was heavily used in user-input validation. |
+| Functions | Self-contained blocks that were used to improve code readability and reduce redundancy. | 
+| Password encryption | Technique used to change a plain-text password into a non-readable formate that is more secure. It allows the user information to be kept confidential and less susceptible to unothorized access. | 
+| Database interaction (SQLite) | Database managing was an essential aspect of this project as all of the input the user makes is saved in respective parts of the database. SQLite allowed the storage and management of this data.  | 
+| HTTP Cookies | Cookies were utilized for the management of user sessions in the website. As soon as the user logs in, a cookie is created that stores a unique session ID. | 
 
 ### Setting up tools needed
 
