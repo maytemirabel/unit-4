@@ -105,7 +105,7 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 22 | Development | Develop the New Post Page | Users will be able to upload their recipes to the website | 60 min | April 19 | C | 
 | 23 | Development | Create the CSS for the New Post Page | Clear visuals that guide the user through the recipe-uploading process | 50 min | April 20 | C |
 | 24 | Testing | Unit testing for New Post Page | Insights on the New Post Page and whether the inputs are saved in the database connected | 30 min | April 30 | B | 
-| 25 | Development | Construct the Landing Page | 
+| 25 | Development | Construct the Landing Page | Page any 
 | 26 | Development | Build the CSS for the Landing Page |
 | 27 | Development | Create the Converter Page | 
 | 28 | Development | Put together the CSS for the Converter Page |
@@ -118,13 +118,8 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 35 | Implementation | Evaluation by Client |  
 | 36 | Development | Final touches based on Client's observations |
 | 37 | Evaluation | Evaluate the success criteria's level of accomplishment | 
-| 38 | Evaluation | Film final video |
-| 39 | Evaluation | Deliver final product to client | 
-
-36	Evaluation: Film final video	Video demonstration of all success criterias operating and functioning within the website	1 Hour	9th May 2023	E
-37	Implementation: Deliver to client	Met Client's need in the website	15 Minutes	9th May 2023	E
-36	Evaluation: Film final video	Video demonstration of all success criterias operating and functioning within the website	1 Hour	9th May 2023	E
-37	Implementation: Deliver to client	Met Client's need in the website	15 Minutes	9th May 2023	E
+| 38 | Functionality | Film final video | A video walking through the overall functionality of the completed website | 30 min | May 9 | D | 
+| 39 | Evaluation | Deliver final product to client | Client's requirements and needs are met | 10 min | May 10 | E | 
 
 ## Criteria C: Development
 ### Tools Utilized
