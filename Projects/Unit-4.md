@@ -52,7 +52,8 @@ The system diagram is a visual model of the application, its components and thei
 The wireframe provides a visual representation of the website's design before any code is made. It also displays the functionalities of every button planned out to be utilized, which is helpful as the developer as there is a model to refer back to if in doubt.  
 
 ### ER Diagram
-<img width="1128" alt="Screen Shot 2023-05-07 at 22 39 28" src="https://user-images.githubusercontent.com/105724334/236680951-8d76e354-9891-449a-936c-7a226cf6de89.png">
+<img width="998" alt="Screen Shot 2023-05-10 at 21 00 59" src="https://github.com/maytemirabel/unit-4/assets/105724334/2484aa41-db6b-430c-bee9-f3c7fa0a72df">
+
 
 ##### Figure 3. ER Diagram
 The ER diagram shows the two tables: users and posts, and how they relate to each other within the system. 
@@ -62,7 +63,7 @@ The ER diagram shows the two tables: users and posts, and how they relate to eac
 
 
 ##### Figure 4. The UML Diagram For the Classes In the Application
-The UML diagram allows easy vizualization of the website before it is developed. The diagram shown in Fig. 4 vizualises the handling database interactions, such as executing queries, saving changes, and closing the connection.
+The UML diagram allows easy vizualization of the website before it is developed. The diagram shown in Fig. 4 vizualises the handling database interactions such as executing queries, saving changes, and closing the connection.
 
 ### Flow Diagrams
 
@@ -104,19 +105,26 @@ The UML diagram allows easy vizualization of the website before it is developed.
 | 22 | Development | Develop the New Post Page | Users will be able to upload their recipes to the website | 60 min | April 19 | C | 
 | 23 | Development | Create the CSS for the New Post Page | Clear visuals that guide the user through the recipe-uploading process | 50 min | April 20 | C |
 | 24 | Testing | Unit testing for New Post Page | Insights on the New Post Page and whether the inputs are saved in the database connected | 30 min | April 30 | B | 
-| 25 | Development | 
-| 26 | Development | 
-| 27 | Development | 
-| 28 | Development | 
-| 29 | Development | 
-| 30 | Development | 
-| 31 | Development | 
-| 32 | Development | 
-| 33 | Development | 
-| 34 | Development | 
-| 35 | Development | 
-| 36 | Development | 
-| 37 | Development | 
+| 25 | Development | Construct the Landing Page | 
+| 26 | Development | Build the CSS for the Landing Page |
+| 27 | Development | Create the Converter Page | 
+| 28 | Development | Put together the CSS for the Converter Page |
+| 29 | Development | Set-up Logout system | 
+| 30 | Development | Code Delete Post system |
+| 31 | Development | Finalize all functionality codes | 
+| 32 | Development | Finalize all CSS | 
+| 33 | Implementation | Beta Testing of finalized website | 
+| 34 | Developement | Improve website based on feedback gathered | 
+| 35 | Implementation | Evaluation by Client |  
+| 36 | Development | Final touches based on Client's observations |
+| 37 | Evaluation | Evaluate the success criteria's level of accomplishment | 
+| 38 | Evaluation | Film final video |
+| 39 | Evaluation | Deliver final product to client | 
+
+36	Evaluation: Film final video	Video demonstration of all success criterias operating and functioning within the website	1 Hour	9th May 2023	E
+37	Implementation: Deliver to client	Met Client's need in the website	15 Minutes	9th May 2023	E
+36	Evaluation: Film final video	Video demonstration of all success criterias operating and functioning within the website	1 Hour	9th May 2023	E
+37	Implementation: Deliver to client	Met Client's need in the website	15 Minutes	9th May 2023	E
 
 ## Criteria C: Development
 ### Tools Utilized
