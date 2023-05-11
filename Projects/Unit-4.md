@@ -41,6 +41,7 @@ The proposed solution will use SQLite as its database management system is effic
 
 ## Criteria B: Solution
 ### System Diagram
+![system diagram](https://github.com/maytemirabel/unit-4/assets/105724334/37a38ba3-c656-4905-a6e0-36cf41eee549)
 
 ##### Figure 1. The System Diagram For the Application
 The system diagram is a visual model of the application, its components and their interactions. As shown on Fig. 1, the input is done through a keyboard and the output is manifested on the display (screen.) Although the website runs on a web browser, all of the various inputs made by the user will be saved in a local SQL database called **project4.db**.
