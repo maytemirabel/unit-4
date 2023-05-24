@@ -176,60 +176,48 @@ Registration System
 
 Although the client did not specify an encrypted registration or log in system in the success criteria, it is important to discuss this step as a secure log in and registration system are good practices of a developer.
 ```.py
-@app.route('/signup', methods=['GET','POST'])
+@app.route('/Register', methods=["GET", "POST"])
 def signup():
-    message=''
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
+    msg = ""
+    if request.method == "POST":
         email = request.form['email']
-        db = database_worker('woof.db')
-        existing_user = db.search(f"SELECT * from users where email = '{email}' or username='{username}'")
-        if existing_user:
-            #check existing email
-            if email == existing_user[0][1]:
-                message = "User with that email already exists. Try again."
-            elif username == existing_user[0][2]:
-                message = "User with that username already exists. Try again."
-            elif email== existing_user[0][1] and username==existing_user[0][2]:
-                message = "User with that username & email already exists. Perhaps log in instead?"
+        passwd = request.form['passwd']
+        passwdconfirm = request.form['confirmpasswd']
+        if passwd == passwdconfirm:
+            hash = encrypt_password(passwd)
+            db = database_worker("project4.db")
+            new_post = f"INSERT into users (email,password) values('{email}','{hash}')"
+            db.run_save(query=new_post)
+            return redirect(url_for('login'))
         else:
-            new_user = f"INSERT into users (email,username, password) values ('{email}','{username}','{encrypt_password(password)}')"
-            db.run_save(new_user)
-            db.close()
-            return redirect("/home")
-    else:
-        return render_template("signup.html", message=message)
+            msg = "Passwords do not match"
+    return render_template("Register.html", message=msg)
  ```
 The provided code represents a Flask route called '/signup' that handles the signup functionality for my web application Woof Wise.In line 1, route declaration is done, meaning the code will handle requests related to '/signup'. The naming of this app route is deliberate to ensure that the code is comprehensive & organized. Line 4 if request.method=='POST' ensures that the code indented under line 4 will only be ran once the user clicks submit. This submit button is located in the HTML end of the app route. If the method is not POST, the user will stay access to the signup page. Lines 5 to 7 are used to extract data from the submitted form. Specifically, lines 5 to 8 retrieves the value entered in the 'username', 'password', and 'email' fields respectively of the signup form. Then lines 9 to 10 focus on database interaction. database_worker, a custom class previously explained in this documentation, initializes a connection to the woof.db SQLite database. Line 10 existing_user = db.search(f"SELECT * from users where email = '{email}' or username='{username}'") executes a SELECT query to check if a user with the given email or username already exists in the database. Meanwhile lines 11 to 19 focus on validation and error handling. Specifically, if an existing user is found, line 13 and 15 checks if the email or username inputted is already registered in the database. If so, the code will output a message stating that a user already currently uses the email or username typed in. Line 17 checks if both username and email are already registered and outputs a message suggesting to the user to perhaps log in instead of registering a new account. Line 19 checks if all these criteria were not met and moves on into generating a query to the database, inserting the new user, email, and password provided. The password provided is kept encrypted as seen in line 20 where encrypt_password, a custom class that hashes a given text, is used before inserting the value password to the database. This query is committed to the database and a new row of data appears in the database. db.close closes the database connection. Finally, the user is redirected to the home page upon successful sign up.
 
 Log in System
 ```.py
-@app.route('/login', methods=['GET','POST'])
+@app.route('/Login', methods=["GET","POST"])
 def login():
-    if request.method=='POST':
-        uname = request.form['uname']
+    msg = ""
+    if request.method == "POST":
+        email = request.form['email']
         password = request.form['password']
-        db=database_worker("woof.db")
-        existing_user = db.search(f"SELECT * from users where username='{uname}' or email='{uname}'")
-        print(check_password(password,existing_user[0][3]))
-        if existing_user:
-            if check_password(password, existing_user[0][3]):
-                print("Successfully logged in.")
-                #resp = make_response(render_template('profile.html'))
-                resp = make_response(redirect(url_for('home')))
-                resp.set_cookie('user_id',f'{existing_user[0][2]}')
-                print('Password is correct')
-                return resp
-            else:
-                error = "Incorrect password. Try again."
-                print(error)
-                return render_template('login.html', error=error)
+        if len(email) > 0 and len(password) > 0:
+            db = database_worker("project4.db")
+            user = db.search(f"Select * from users where email = '{email}'")
+            if user:
+                user = user[0] #search returns a list, so only one is selected here
+                id, email_db, hashed = user
+                if check_password(hashed_password=hashed, user_password=password):
+                    response = make_response(redirect('Home'))
+                    response.set_cookie('user_id', f"{id}") #cookie is a string
+                return response
+            else: msg = "Incorrect password! Try again!"
         else:
-            print("User does not exist. Try again.")
-        db.close()
-    else:
-        return render_template("login.html")
+            msg = "User does not exist."
+    return render_template("Register.html", message=msg)
+
         
 ```
 The provided code handles the login functionality for the Woof Wise web application. It checks if the submitted username or email exists in the database, verifies the password, and authenticates the user by setting a cookie. It also handles error scenarios, such as incorrect passwords or non-existing users.
@@ -242,176 +230,31 @@ In line 12, a response object is created using make_response. It either renders 
 
 Posting Functionality [Success Criteria 1] This posting functionality fulfills success criteria one and acts as the backbone of the web application. It allows different users to post content to the application.
 ```.py
-@app.route('/new_post', methods=['GET','POST'])
-def post():
-    if request.method=='POST':
-        title = request.form['title']
-        content = request.form['content']
-        flair=request.form['options']
-        date_time = datetime.fromtimestamp(time.time())
-        str_date = date_time.strftime("%b %d, %Y")
-        print(title, content,flair, str_date)
-        #DO SOMETHING WITH THE POSTS
-        db = database_worker("woof.db")
-        new_post = f"INSERT into posts (uid,title, post, flair, date,likes) values ('{user_id}','{title}','{content}','{flair}','{str_date}',0)"
-        db.run_save(new_post)
-        db.close()
-        return redirect('/home')
-    return render_template('new_post.html')
-In the given code snippet, a Flask route is defined at '/new_post' with the allowed methods being GET and POST. If the request method is POST, the code retrieves the data submitted in the form fields of the request using the request.form. The values of the 'title', 'content', and 'options' fields are assigned to respective variables: title, content, and flair. As stated in the tools used, this section of the code, specifically line 7 to 8, uses datetime to mark when the post was created and use this to update the database.
-```
-Commenting Functionality - Success Criteria 2
-```.py
-@app.route('/update', methods=['POST'])
-def update():
-    if request.method=='POST':
-        if request.form['submit']=='like':
-            ...#miscellaneous lines of code
-        elif request.form['submit']=='save':
-            ...#miscellaneous lines of code
-        elif request.form['submit']=='comment':
-            return redirect(url_for(f'comment',post_id=post_id))
+@app.route('/NewPost', methods=['GET','POST']) # methods used for user to upload posts
+def new_post():
+    msg = ""
+    if request.cookies.get('user_id'): # validate the user
+        user_id = request.cookies.get('user_id')
+        db = database_worker("project4.db")
+        if request.method == 'POST': # recipe is uploaded
+            title = request.form['Title']
+            ingredients = request.form['Ingredients']
+            instructions = request.form['Instructions']
+            description = request.form['Description']
+            if len(title) > 0 and len(ingredients) > 0 and len(instructions)>0 and len(description)>0:
+                new_post = f"INSERT into posts (title, ingredients, instructions, description, user_id) values('{title}','{ingredients}','{instructions}', '{description}', {user_id})"
+                db.run_save(query=new_post)
+                posts = db.search("Select * FROM posts")
+                return redirect(url_for('Project-Home', posts = posts ))
+            else:
+                msg = "Fields Incomplete: Please enter Title, Ingredients and Instructions"
+                return render_template("NewPost.html", message=msg) # error message is displayed
+        return render_template("NewPost.html", message=msg)
     else:
-        return redirect('/home')
-@app.route("/new_comment", methods=['GET','POST'])
-def comment():
-    post_id = request.args.get('post_id')
-    id = request.cookies.get('user_id')
-    db = database_worker("woof.db")
-    post = db.search(f"SELECT * FROM posts where id={post_id}")
-    if request.method == 'POST':
-        reply = request.form['content']
-        db.run_save(f"INSERT INTO comments(post_id, uid,comment) values({post_id},'{id}','{reply}')")
-    comments = db.search(f"SELECT * FROM comments where post_id={post_id}")
-    print(comments)
-    db.close()
-
-    return render_template('new_comment.html', post=post, comments=comments, id=id)
-Like/Dislike Functionality [Success Criteria 3]
-
-@app.route('/update', methods=['POST'])
-def update():
-    if request.method=='POST':
-        post_id = request.form['post_id']
-        id = request.cookies.get('user_id')
-        db = database_worker('woof.db')
-        if request.form['submit'] == 'like':
-            print('like button clicked')
-            num = request.form['num']
-            # CHECK IF USER ALREADY LIKED
-            liked = db.search(f"SELECT * FROM likes where uid='{id}' AND post_id={post_id}")
-
-            # IF USER ALREADY LIKED, UNLIKE THE POST BY DECREASING NUM VALUE & DELETING ROW IN LIKES
-            if liked:
-                db.run_save(f"UPDATE posts set likes=likes-1 where id={post_id}")
-                db.run_save(f"DELETE from likes where uid='{id}' AND post_id={post_id}")
-            elif not liked:
-                db.run_save(f"UPDATE posts set likes=likes+1 where id={post_id}")
-                db.run_save(f"INSERT INTO likes(post_id,uid) VALUES({post_id},'{id}')")
-
-            # UPDATE HTML POSTS
-            posts = db.search(f"SELECT * from posts")
-            db.close()
-            return render_template('home.html', posts=posts)
-```
-The provided code handles the update functionality for a specific post in the Woof Wise web application. The code is associated with the '/update' URL and is triggered when a POST request is made to this URL.
-
-The code block starting from line 9 handles the specific case when the 'like' button is clicked. It checks if the value of the 'submit' field in the form is 'like' (line 9). If it is, the code proceeds to update the likes for the corresponding post and perform the necessary actions. Lines 11-17 handle the logic for liking/unliking a post. First, the code checks if the user has already liked the post by searching for a matching entry in the 'likes' table for the user_id and post_id. If a match is found (line 13), it means the user has already liked the post, so the code decreases the likes count for the post and deletes the corresponding entry in the 'likes' table. If no match is found (line 15), it means the user has not liked the post yet, so the code increases the likes count for the post and inserts a new entry in the 'likes' table. After updating the likes and likes-related records, the code proceeds to update the HTML representation of the posts (lines 20-21). It performs a new database query to retrieve the updated post data, assigns it to the 'posts' variable, and then closes the database connection. Finally, the updated posts data is passed to the 'home.html' template, and the template is rendered with the updated data using the render_template function (line 22).
-
-Pet Care Page - Success Criteria 4
-
-Shelters Information Page - Success Criteria 5
-
-The provided code is important for achieving the success criteria of showing a directory of pet shelters with their name, address, telephone number, email, and contact person.
-```.py
-<body style="display: flex; flex-direction: row;">
-<div class="nav-parent" style="background: white; position: fixed; overflow: hidden; width: 100%">
-    <ul style="display: flex; flex-direction: row; list-style-type: none;">
-        <li><a href="#" class="logo"><img src="/Project_Files/static/logos/trans.png" style="width: 50px"><span
-                class="logo"></span></a></li>
-        <li><a href="/home" style="text-decoration: none;"><i class="fa fa-home"></i><span class="nav-item">Home</span></a>
-        </li>
-        <li><a href="/pet_care" style="text-decoration: none;"><i class="fa fa-heart"></i><span class="nav-item">Pet Care</span></a>
-        </li>
-        <li><a href="/shelters" style="text-decoration: none;"><i class="fa fa-dog" style="color:#9C61F1;"></i><span
-                class="nav-item" style="color:#9C61F1;">Shelters</span></a></li>
-        <li><a href="/saves" style="text-decoration: none;"><i class="fa-regular fa-bookmark"></i><span
-                class="nav-item">Saved</span></a></li>
-        <li><a href="/profile" style="text-decoration: none;"><i class="fa fa-user" style=""></i><span class="nav-item">Profile</span></a>
-        </li>
-        <li><a href="/logout" class="logout" style="text-decoration: none;"><i class="fa fa-sign-out-alt"></i><span
-                class="nav-item">Log out</span></a></li>
-    </ul>
-</div>
-
-
-<!--CARD TO BE REPLICATED-->
-
-<div class="cards" style="flex-direction: row;row-gap: 10px; padding-top: 5%;">
-    {% for post in posts %}
-    <div class="card">
-        <div class="card-title" style="margin-top: 2px;">
-            <h2 style="color:#9C61F1;">
-                {{ post[1]}}
-                <small style="color: #2F2F2F;font-weight: normal; padding-top: 5px;"><i class="fas fa-map-marker-alt"
-                                                                                        style="margin-right: 12px;"></i>{{
-                    post[2] }}</small>
-                <small style="color: #2F2F2F;font-weight: normal;"><i class="fas fa-phone fa-flip-horizontal"
-                                                                      style="margin-right: 8px;"></i>{{ post[3]
-                    }}</small>
-            </h2>
-        </div>
-        <div class="card-content">
-            <p style="color: #2F2F2F; padding-left: 15px; padding-right: 15px;padding-top:6px;padding-bottom: 10px;">
-                {{ post[4] }}
-            </p>
-        </div>
-
-    </div>
-
-    {% endfor %}
-</div>
-</body>
-```
-Navbar: the <div> section with class "nav-parent" creates a fixed navigation bar at the top of the page. It contains <ul> with <li> elements representing different navigation links such as Home, Pet Care, Shelters, Saved, Profile, and Log out. This allows users to easily navigate through your web app.
-
-Shelter Cards: The code enclosed within the {% for post in posts %} and {% endfor %} Jinja tags generates dynamic content for each shelter entry. It iterates over the posts data to display individual cards for each shelter. The card displays the shelter's name, address, telephone number, and contact person. This allows users to browse through the directory and view details about each shelter.
-
-@app.route('/shelters', methods=['GET','POST'])
-def shelters():
-    db = database_worker('woof.db')
-    posts = db.search("SELECT * FROM SHELTERS")
-    print(posts)
-    return render_template('shelters.html', posts=posts)
-Line 4 executes a SELECT query on the 'woof.db' database, retrieving all the data from the 'SHELTERS' table. The query fetches all columns (*) from the 'SHELTERS' table. The SHELTERS table in the woof.db database contains the shelter name, address, phone number, and content.
-
-Bookmark/Save Post Functionality - Success Criteria 6
-
-The provided code handles the bookmarking functionality for a specific post in the Woof Wise web application, which is directly related to the success criteria of allowing users to bookmark posts and save them in one page. This adds to the element of personalization stated in the problem description by allowing users to save information that are significant to them, based on their situation or pet's needs.
-```.py
-def update():
-    if request.method=='POST':
-        post_id = request.form['post_id']
-        id = request.cookies.get('user_id')
-        db = database_worker('woof.db')
-    ... #miscellaneous lines of code
-    elif request.form['submit']=='save':
-        posts = db.search(f"SELECT * from posts")
-
-        # CHECK IF USER ALREADY SAVED
-        saved = db.search(f"SELECT * FROM saves where uid='{id}' AND post_id={post_id}")
-        if saved:
-            db.run_save(f"DELETE from saves where uid='{id}' AND post_id={post_id}")
-        elif not saved:
-            db.run_save(f"INSERT INTO saves(post_id, uid) VALUES({post_id},'{id}')")
-        db.close()
-        return render_template('home.html', posts=posts)
+        return redirect('Project-Home')
  ```
-Lines 7-14 handle the bookmarking logic. The code checks if the user has already saved the post by searching for a matching entry in the 'saves' table for the user_id and post_id. If a match is found (line 9), it means the user has already saved the post, so the code deletes the corresponding entry from the 'likes' table (instead of the intended 'saves' table, which should be fixed), indicating that the user has unbookmarked the post.
+In the given code snippet, a Flask route is defined at '/new_post' with the allowed methods being GET and POST. If the request method is POST, the code retrieves the data submitted in the form fields of the request using the request.form. The values of the 'title', 'content', and 'options' fields are assigned to respective variables: title, content, and flair. As stated in the tools used, this section of the code, specifically line 7 to 8, uses datetime to mark when the post was created and use this to update the database.
 
-If no match is found (line 11), it means the user has not saved the post yet, so the code inserts a new entry in the 'saves' table, indicating that the user has bookmarked the post.
-
-The code then closes the database connection (line 15) and proceeds to render the 'home.html' template with the updated list of posts (line 16). This ensures that the user sees the updated bookmarked status of the post on the home page.
 
 ### Setting up tools needed
 
